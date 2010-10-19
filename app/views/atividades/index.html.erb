@@ -1,0 +1,37 @@
+<h1>Listing atividades</h1>
+
+<table>
+  <tr>
+    <th>Titulo</th>
+    <th>Descricao</th>
+    <th>Data inicial</th>
+    <th>Previsao final</th>
+    <th>Prioridade</th>
+    <th>Tipo</th>
+    <th>Projeto</th>
+    <th>Usuario</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @atividades.each do |atividade| %>
+  <tr>
+    <td><%= atividade.titulo %></td>
+    <td><%= atividade.descricao %></td>
+    <td><%= atividade.data_inicial %></td>
+    <td><%= atividade.previsao_final %></td>
+    <td><%= atividade.prioridade %></td>
+    <td><%= atividade.tipo %></td>
+    <td><%= atividade.projeto_id %></td>
+    <td><%= atividade.usuario_id %></td>
+    <td><%= link_to 'Show', atividade %></td>
+    <td><%= link_to 'Edit', edit_atividade_path(atividade) %></td>
+    <td><%= link_to 'Destroy', atividade, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Atividade', new_atividade_path %>

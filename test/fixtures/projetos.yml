@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nome: MyString
+  data_inicial: 2010-10-04 00:51:20
+  data_final: 2010-10-04 00:51:20
+
+two:
+  nome: MyString
+  data_inicial: 2010-10-04 00:51:20
+  data_final: 2010-10-04 00:51:20

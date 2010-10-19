@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Titulo:</b>
+  <%= @atividade.titulo %>
+</p>
+
+<p>
+  <b>Descricao:</b>
+  <%= @atividade.descricao %>
+</p>
+
+<p>
+  <b>Data inicial:</b>
+  <%= @atividade.data_inicial %>
+</p>
+
+<p>
+  <b>Previsao final:</b>
+  <%= @atividade.previsao_final %>
+</p>
+
+<p>
+  <b>Prioridade:</b>
+  <%= @atividade.prioridade %>
+</p>
+
+<p>
+  <b>Tipo:</b>
+  <%= @atividade.tipo %>
+</p>
+
+<p>
+  <b>Projeto:</b>
+  <%= @atividade.projeto_id %>
+</p>
+
+<p>
+  <b>Usuario:</b>
+  <%= @atividade.usuario_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_atividade_path(@atividade) %> |
+<%= link_to 'Back', atividades_path %>

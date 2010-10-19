@@ -1,0 +1,49 @@
+<%= form_for(@atividade) do |f| %>
+  <% if @atividade.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@atividade.errors.count, "error") %> prohibited this atividade from being saved:</h2>
+
+      <ul>
+      <% @atividade.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :titulo %><br />
+    <%= f.text_field :titulo %>
+  </div>
+  <div class="field">
+    <%= f.label :descricao %><br />
+    <%= f.text_field :descricao %>
+  </div>
+  <div class="field">
+    <%= f.label :data_inicial %><br />
+    <%= f.datetime_select :data_inicial %>
+  </div>
+  <div class="field">
+    <%= f.label :previsao_final %><br />
+    <%= f.datetime_select :previsao_final %>
+  </div>
+  <div class="field">
+    <%= f.label :prioridade %><br />
+    <%= f.text_field :prioridade %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo %><br />
+    <%= f.text_field :tipo %>
+  </div>
+  <div class="field">
+    <%= f.label :projeto_id %><br />
+    <%= f.text_field :projeto_id %>
+  </div>
+  <div class="field">
+    <%= f.label :usuario_id %><br />
+    <%= f.text_field :usuario_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

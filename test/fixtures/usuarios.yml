@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  login: MyString
+  password: MyString
+  nome: MyString
+  sexo: MyString
+  data_nascimento: 2010-10-04 10:36:08
+  endereco: MyString
+  telefone: MyString
+  data_contratacao: 2010-10-04 10:36:08
+  salario: 1
+  habilidades: MyString
+  administrador: false
+
+two:
+  login: MyString
+  password: MyString
+  nome: MyString
+  sexo: MyString
+  data_nascimento: 2010-10-04 10:36:08
+  endereco: MyString
+  telefone: MyString
+  data_contratacao: 2010-10-04 10:36:08
+  salario: 1
+  habilidades: MyString
+  administrador: false
